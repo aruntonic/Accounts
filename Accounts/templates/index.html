@@ -1,0 +1,18 @@
+<html>
+<body>
+	<table>
+		{% for acc in accounts %}
+		<tr>
+			<td>{{ acc.name }}</td>
+			<td>{{ acc.type }}</td>
+			<td>{{ acc.balance }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<p>DEBIT : {{ debit }}</p>
+	<p>CREDIT : {{ credit }}</p>
+	<p>Holding : {{ holding }}</p>
+	<p>Saving : {{ saving }}</p>
+	<p>Remaining : {{ rem }}</p>
+</body>
+</html>
